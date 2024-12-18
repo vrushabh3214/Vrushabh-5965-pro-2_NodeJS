@@ -22,7 +22,6 @@ app.get('/', async (req, res) => {
 });
 app.get('/view-more/:id', async (req, res) => {
   let empData = await BookStore.findById(req.params.id);
-  console.log(empData);
   
   res.render('view-more', {
     empData
