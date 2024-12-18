@@ -34,8 +34,6 @@
         </div>
       </nav>
 
-
-
     <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
         aria-labelledby="staticBackdropLabel">
         <div class="offcanvas-header">
@@ -130,18 +128,13 @@
                         <h5 class="card-title">
                             <%= v.title %>
                         </h5>
-                        <p class="card-text mb-0">
-                            <%= v.description %>
+                        
+                        
+                        <p class="mb-0"><span class="fw-bolder">Price:</span> &nbsp;<%= v.price %>
                         </p>
-                        <p class="mb-0"><span class="fw-bolder">Genre:</span> &nbsp;
-                            <%= v.genre.length>=3?v.genre[0]+", "+v.genre[1]+", "+v.genre[2]+"...":v.genre %>
+                        <p class="mb-0"><span class="fw-bolder">Rating:</span> &nbsp;<%= v.rating %> / 5 <span class="fs-5 text-warning"> &#9733;</span>
                         </p>
-                        <p class="mb-0"><span class="fw-bolder">Price:</span> &nbsp;<%= v.price %> &nbsp;
-                                <span class="fw-bolder">Stock:</span> &nbsp;<%= v.stock %>
-                        </p>
-                        <p class="mb-0"><span class="fw-bolder">Rating:</span> &nbsp;<%= v.rating %> <span class="fs-5 text-warning"> &#9733;</span>
-                        </p>
-                        <a href="/view-more/<%= v._id %>" class="btn btn-primary">View More</a>
+                        <a href="/view-more/<%= v._id %>" class="btn btn-primary mt-3">View More</a>
                     </div>
                 </div>
                 <% }) %>
