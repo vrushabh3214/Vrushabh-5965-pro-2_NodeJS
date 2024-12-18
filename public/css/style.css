@@ -54,7 +54,7 @@ td {
     padding: 10px;
     text-align: left;
     border: 1px solid #dee2e6;
-    letter-spacing: 1px; /* or word-spacing: 1px;*/
+    letter-spacing: 1px; 
 }
 
 td a {
