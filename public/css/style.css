@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: start;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+li{
+    list-style-type: none;
+}
+
+input[type="checkbox"] {
+   margin:5px 2px 10px 20px;
+}
+input[type="radio"] {
+    margin-left: 20px;
+}
+
+table{
+   width: 100%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.viewTable {
+    width: 75%;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+    letter-spacing: 1px; /* or word-spacing: 1px;*/
+}
+
+td a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+ input[type="submit"],.modal-footer .btn {
+    width: 48%;
+    padding: 8px 16px;
+    /* cursor: pointer; */
+    border-radius: 4px !important;
+}
+
