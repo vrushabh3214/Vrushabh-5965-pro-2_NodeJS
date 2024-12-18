@@ -34,30 +34,30 @@
     <div class="container ">
         <div class="d-flex flex-wrap  gap-5 mt-5">
             <div>
-                <img src="<%= empData.coverImage %>" height="400" width="300" class="" alt="...">
+                <img src="<%= BookData.coverImage %>" height="400" width="300" class="" alt="...">
             </div>
             
             <div>
                 <h5 class="fs-3">
-                    <%= empData.title %>
-                    <span class="fs-6 fw-semibold text-secondary">Hardcover - <%= empData.publishedDate %></span>
+                    <%= BookData.title %>
+                    <span class="fs-6 fw-semibold text-secondary">Hardcover - <%= BookData.publishedDate %></span>
                 </h5>
-                <p class="fs-6 fw-semibold mb-0">by <span class=" text-primary"><%= empData.author %></span><span class="fs-6 fw-semibold text-secondary">(Author)</span>
+                <p class="fs-6 fw-semibold mb-0">by <span class=" text-primary"><%= BookData.author %></span><span class="fs-6 fw-semibold text-secondary">(Author)</span>
                 </p>
-                <p class="mb-0"><span class="fw-bolder"><%= empData.rating %></span> 
+                <p class="mb-0"><span class="fw-bolder"><%= BookData.rating %></span> 
                     <span class="fs-5 text-warning"> &#9733;</span><span class="fs-6 fw-semibold text-secondary"> (Rating)</span>
                 </p>
                 <p class="mb-0"><span class="fw-bolder">Genre:</span> &nbsp;
-                    <%= empData.genre %>
+                    <%= BookData.genre %>
                 </p>
-                <p class="mb-0"><span class="fw-bolder">Price:</span> &nbsp;<%= empData.price %> &nbsp;
-                        <span class="fw-bolder">Stock:</span> &nbsp;<%= empData.stock %>
+                <p class="mb-0"><span class="fw-bolder">Price:</span> &nbsp;<%= BookData.price %> &nbsp;
+                        <span class="fw-bolder">Stock:</span> &nbsp;<%= BookData.stock %>
                 </p>
-                <p class="mb-0"><span class="fw-bolder">Published Date:</span> &nbsp;<%= empData.publishedDate %>
+                <p class="mb-0"><span class="fw-bolder">Published Date:</span> &nbsp;<%= BookData.publishedDate %>
                 </p>
-                <p class="mb-0"><span class="fw-bolder">Publisher:</span> &nbsp;<%= empData.publisher %>
+                <p class="mb-0"><span class="fw-bolder">Publisher:</span> &nbsp;<%= BookData.publisher %>
                 </p>
-                <p class="mb-0"><span class="fw-bolder">Description:</span> &nbsp;<%= empData.description %>
+                <p class="mb-0"><span class="fw-bolder">Description:</span> &nbsp;<%= BookData.description %>
                 </p>
 
             </div>

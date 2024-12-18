@@ -15,16 +15,16 @@ app.use("/uploads", express.static(path.join(__dirname, 'uploads')))
 
 
 app.get('/', async (req, res) => {
-  let empData = await BookStore.find();
+  let BookData = await BookStore.find();
   res.render('home', {
-    empData
+    BookData
   })
 });
 app.get('/view-more/:id', async (req, res) => {
-  let empData = await BookStore.findById(req.params.id);
+  let BookData = await BookStore.findById(req.params.id);
   
   res.render('view-more', {
-    empData
+    BookData
   })
 });
 
